@@ -1,9 +1,51 @@
+
+
 import React from 'react';
+import Cards from './Cards/Cards';
+import Charts from './Charts/Charts';
+import Countrypicker from './Countrypicker/Countrypicker';
+import { fetchdata } from '../api';
+class Status extends React.Component {
+	state = {
+		data: {},
+		country: '',
+	}
+	async componentDidMount() {
 
-const Stats = () => {
-	return (
-	<h1> hi </h1>
-	);
-};
+		const fetcheddata = await fetchdata();
+		this.setState({ data: fetcheddata });
+		console.log(fetcheddata);
 
-export default Stats;
+	}
+	handleCountryChange = async (country) => {
+		const fetcheddata = await fetchdata(country);
+		this.setState({ data: fetcheddata,country:country });
+		console.log(country);
+
+	}
+	render() {
+		const { data,country} = this.state;
+		return (
+			<div>
+				<Cards data={data} />
+				<br />
+				<br />
+				<Countrypicker handleCountryChange={this.handleCountryChange} />
+				<br />
+				<Charts data={data} country={country}/>
+
+
+
+			</div>
+		);
+
+	}
+
+
+
+}
+
+
+
+
+export default Status;

@@ -1,18 +1,25 @@
 import React from 'react';
-import pic from '../assets/covid-cells.jpg';
-import news1 from '../assets/news1.webp';
-import news2 from '../assets/news2.webp';
-import news3 from '../assets/news3.jpg';
-import pre1 from '../assets/pre1.jpg';
-import pre2 from '../assets/pre2.jpg';
-import pre3 from '../assets/pre3.jpg';
+import pic from '../assets/assets/virus.jpg';
+import news1 from '../assets/assets/news1.webp';
+import news2 from '../assets/assets/news2.webp';
+import news3 from '../assets/assets/news3.jpg';
+import pre1 from '../assets/assets/pre1.jpg';
+import pre2 from '../assets/assets/pre2.jpg';
+import pre3 from '../assets/assets/pre3.jpg';
+import './Stylesheet/index.css';
 
 const Home = () => {
 	return (
 		<div>
 	<center><h1> Covid Help </h1></center>
 	<hr style={{width: '25%', backgroundColor: 'maroon', height: 5}}/>
-	<img src={pic} height="25%" width="100%"/>
+  <div class="containers">
+  <img src={pic} height="15%" width="100%"/>
+  <div class="left">Safety is our key priority</div>
+  <div class="bottom-right">Protect yourself and protect others</div>
+
+  </div>
+	
 	<br/><br/>
 	<center><h1> Latest News </h1></center>
 	<hr style={{width: '25%', backgroundColor: 'maroon', height: 5}}/>
