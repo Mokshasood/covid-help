@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import Cards from './Cards/Cards';
 import Charts from './Charts/Charts';
@@ -44,8 +42,4 @@ class Status extends React.Component {
 
 
 }
-
-
-
-
 export default Status;

@@ -1,7 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router,Route} from 'react-router-dom';
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import NavBar from "./components/navbar.component";
 import Landing from './components/Landing';
 import Home from "./components/home.component";

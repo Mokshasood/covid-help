@@ -13,7 +13,7 @@ const NavBar = () => {
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
           <Nav.Link onClick={() => setExpanded(false)}><Link to="/home" className="nav-link">Home</Link></Nav.Link>
-          <Nav.Link onClick={() => setExpanded(false)}><Link to="/stats" className="nav-link">Status</Link></Nav.Link>
+          <Nav.Link onClick={() => setExpanded(false)}><Link to="/stats" className="nav-link">Stats</Link></Nav.Link>
           <Nav.Link onClick={() => setExpanded(false)}><Link to="/precautions" className="nav-link">Precautions</Link></Nav.Link>
           <Nav.Link onClick={() => setExpanded(false)}><Link to="/essentials" className="nav-link">Essentials</Link></Nav.Link>
         </Nav>

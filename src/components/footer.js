@@ -5,9 +5,7 @@ import '../assets/footer.css';
 function Footer() {
     return (
         <div class="container-fluid foot">
-            <p>Copyright 2021 COVID Help. All Rights Reserved.</p>
-            
-            <p>#Stay Home #Stay Safe</p>
+            <h3>#Stay Home #Stay Safe</h3>
             
         </div>
     );

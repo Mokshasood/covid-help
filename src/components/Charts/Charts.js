@@ -12,13 +12,8 @@ const Charts = ({data,country}) => {
             
             
         }
-
-
-
         fetchAPI();
         
-        
-
     }, []);
     const lineChart = (
 
@@ -32,9 +27,6 @@ const Charts = ({data,country}) => {
                         fill:true,
 
                     }, {
-
-
-
                         data:dailyData.map(({deaths})=>deaths),
                         label:'Deaths',
                         borderColor:'red',
@@ -72,8 +64,6 @@ const Charts = ({data,country}) => {
 
         />):null
     )
-
-
     return (
         <div>
             {country?barChart:lineChart};
@@ -81,4 +71,4 @@ const Charts = ({data,country}) => {
     )
 }
 
-export default Charts
+export default Charts;
