@@ -17,7 +17,12 @@ function Precautions() {
             <br /><h4>To prevent the spread of COVID-19:</h4>
             <ul style={{ listStyle: 'none' }}>
                 <li className="flex-container">
-                    Clean your hands often. Use soap and water, or an alcohol-based hand rub.
+
+                            <p>Clean your hands often. Use soap and water, or an alcohol-based hand rub  </p>
+
+
+                        
+
 
                     <img src={cleanhand} alt="clean" style={{ width: '35%', height: '15%' }} />
                 </li>
